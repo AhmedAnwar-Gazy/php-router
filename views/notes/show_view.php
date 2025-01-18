@@ -13,6 +13,9 @@
           <a href="/notes" class=" text-gray-300 bg-green-600 hover:bg-green-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Go Back</a>
         </div>
         <div>
+          <a href="/notes/edit?id=<?= $note['id'] ?>" class=" text-gray-300 bg-blue-600 hover:bg-blue-500 hover:text-white rounded-md px-3 py-2 text-sm font-medium"> Edit Note</a>
+        </div>
+        <div>
           <form action="" method="post">
             <input type="hidden" name= "_method" value="DELETE">
             <input type="hidden" name= "id" value="<?= $note['id'] ?>">
