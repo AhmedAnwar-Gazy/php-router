@@ -18,3 +18,7 @@ $router->get('/notes/Create', 'controlers/notes/create.php');
 $router->post('/notes/Create', 'controlers/notes/store.php');
 
 $router->get('/notes/edit', 'controlers/notes/edit.php');
+
+
+$router->get('/register','controlers/registertion/create.php');
+$router->post('/register','controlers/registertion/store.php');

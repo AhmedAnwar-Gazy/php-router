@@ -1,7 +1,7 @@
 <?php
 $heading = "Create Notes";
 
-require 'core\\' . "Validator.php";
+
 
 use core\App ;
 use core\Database;
