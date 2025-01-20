@@ -37,14 +37,14 @@ if( $user){
     $db->query('INSERT INTO users (username , email , password ,admin ) VALUES (:username ,:email , :password , :admin);',[
         'username' => 'guo',
         'email' => $email,
-        'password' => $password ,
+        'password' =>password_hash($password ,PASSWORD_BCRYPT ) ,
         'admin' => 0 
     ]
 );
 
-$_SESSION['user'] = [
-    'email' => $email
-];
+
+logIn($user);
+
 
 
 header("Location: /");
